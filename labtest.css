@@ -1,0 +1,242 @@
+.frstcont {
+  display: flex;
+  height: 600px;
+  gap: 5px;
+  background-color: rgb(224, 248, 255);
+}
+.inner {
+  width: 700px;
+  height: 400px;
+  margin: auto;
+}
+.radio {
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-top: 7px;
+  margin-left: 7px;
+  border-radius: 13px;
+  margin-right: 7px;
+}
+.radio > img {
+  max-width: 100%;
+}
+.small > p {
+  margin-top: 9px;
+}
+.inner_1 {
+  width: 350px;
+  height: 450px;
+  border: 1px solid wheat;
+  margin: auto;
+  gap: 5px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+.inner img {
+  max-width: 100%;
+}
+.small {
+  margin-left: 15px;
+  width: 150px;
+  height: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  margin-top: 10px;
+  float: left;
+  clear: right;
+  margin-bottom: 10px;
+}
+.lege {
+  color: rgb(2, 183, 198);
+  margin-left: 15px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.in {
+  width: 300px;
+  height: 30px;
+  margin-left: 15px;
+}
+/*2nd container */
+.mainicon {
+  display: grid;
+  grid-template-columns: repeat(5, 18%);
+  gap: 30px;
+}
+.smallcon {
+  height: 65px;
+  width: 200px;
+  margin-left: 40px;
+}
+.cir_icon {
+  height: 65px;
+  width: 65px;
+  border-radius: 35px;
+  float: left;
+  margin-right: 15px;
+}
+.cir_icon > img {
+  max-width: 100%;
+}
+.secdcon h1 {
+  margin-left: 10px;
+}
+.secdcon p {
+  margin-left: 10px;
+  color: rgb(133, 137, 140);
+}
+
+/* third container   */
+.box_con {
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  margin: auto;
+  gap: 2%;
+  background-color: rgb(246, 246, 247);
+}
+.thirdcon > h1 {
+  margin-left: 20px;
+}
+.thirdcon > p {
+  margin-left: 20px;
+  color: rgb(133, 137, 140);
+}
+.boxes {
+  height: 350px;
+  width: 300px;
+  margin: auto;
+  padding: 4%;
+}
+.line {
+  font-size: 15px;
+  font-weight: lighter;
+  text-decoration: line-through;
+  color: black;
+}
+.line1 {
+  font-size: 15px;
+  font-weight: lighter;
+  color: black;
+}
+.boxes h3 {
+  color: red;
+}
+.book {
+  width: 170px;
+  height: 50px;
+  background-color: white;
+  color: teal;
+  font-weight: bold;
+  margin-left: 60px;
+  cursor: pointer;
+}
+.imgleft {
+  width: 150px;
+  height: 250px;
+  float: right;
+}
+.imgleft img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.col_1 {
+  background-color: rgb(255, 244, 235);
+}
+.col_2 {
+  background-color: rgb(234, 250, 255);
+}
+.col_3 {
+  background-color: rgb(246, 250, 232);
+}
+.col_4 {
+  background-color: rgb(235, 255, 252);
+}
+/* 4th container    */
+.fourthcon > h1 {
+  margin-left: 20px;
+}
+.fourthcon > p {
+  margin-left: 20px;
+  color: rgb(133, 137, 140);
+}
+.review_con {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 2%;
+  margin: auto;
+}
+.review_box {
+  height: 280px;
+  width: 280px;
+  border: 1px solid teal;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: 100px;
+  padding: 20px;
+}
+.review_box p {
+  color: teal;
+}
+.review_box span {
+  float: right;
+}
+/*our highlights  */
+.fifthcon > h1 {
+  margin-left: 20px;
+}
+.fifthcon > p {
+  margin-left: 20px;
+  color: rgb(133, 137, 140);
+}
+.high_con {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  margin: auto;
+  padding: 15px;
+}
+.high_box {
+  height: 100px;
+  width: 300px;
+  border: 1px solid rgb(248, 242, 242);
+  border-radius: 10px;
+}
+.high_icon {
+  width: 75px;
+  height: 75px;
+  float: left;
+  border-radius: 38px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+.high_icon > img {
+  max-width: 100%;
+}
+/*lab partner */
+.sixthcon {
+  border-bottom: 1px solid rgb(206, 208, 209);
+}
+.sixthcon > h1 {
+  margin-left: 15px;
+}
+.sixthcon > p {
+  margin-left: 15px;
+  color: rgb(133, 137, 140);
+}
+.lab_box {
+  max-width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  padding: 5%;
+}
+.lab_img {
+  height: 100px;
+  width: 180px;
+  justify-content: center;
+}
+.lab_img img {
+  max-width: 100%;
+  padding: 15px;
+}
