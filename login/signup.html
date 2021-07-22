@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="signUp_cont">
+      <div class="leftImg">
+        <img
+          src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png"
+        />
+      </div>
+      <div class="rightSignup">
+        <h1>Create Account</h1>
+        <form id="eform">
+          <legend class="lege">EMAIL ID</legend>
+          <input
+            type="email"
+            placeholder="Please enter your email"
+            class="input_1"
+            id="email"
+          />
+          <legend class="lege">MOBILE NO</legend>
+          <input
+            type="num"
+            placeholder="Enter your mobile no"
+            class="input_1"
+            id="num"
+          />
+          <legend class="lege">FIRSTNAME</legend>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            class="input_1"
+            id="first"
+          />
+          <legend class="lege">LASTNAME</legend>
+          <input
+            type="text"
+            placeholder="Enter your lastname"
+            class="input_1"
+            id="last"
+          />
+          <legend class="lege">PASSWORD</legend>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            class="input_1"
+            id="pass"
+          />
+        </form>
+        <button id="button" onclick="storeMed()">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="signup.js"></script>
