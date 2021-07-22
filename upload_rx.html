@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="upload_rx.css" />
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <div class="netNav">
+      <div class="netimg">
+        <img src="https://www.netmeds.com/msassets/home-logo-netmeds-new.svg" />
+      </div>
+    </div>
+    <!-- left prescription conainer -->
+    <h2>Attach Prescription</h2>
+    <div class="rxMain">
+      <div class="rxupload">
+        <p class="pclass">UPLOAD</p>
+        <p>Please upload images of valid prescription from your doctor.</p>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+          <input type="file" name="fileToUpload" id="fileToUpload" />
+          <input type="submit" value="UploadRx" name="submit" id="rx" />
+        </form>
+      </div>
+      <!-- riht Continue container -->
+      <div class="orderIn">
+        <p class="pclass">ORDER INFO</p>
+        <p>Select how do you want to proceed with the order.</p>
+        <h3>
+          <img
+            src="	https://www.netmeds.com/msassets/images/icons/doctor_active.svg"
+          />
+          <span style="margin-left: 4%"> Search And Add Medicine</span
+          ><span><input type="checkbox" class="checkboxes" /></span>
+        </h3>
+        <p class="pclass">Manually search and add medicines in the cart</p>
+        <h3>
+          <img src="https://www.netmeds.com/msassets/images/icons/call.svg" />
+          <span style="margin-left: 4%"> Get call from Netmeds</span
+          ><span><input type="checkbox" class="checkboxes" /></span>
+        </h3>
+        <p class="pclass">
+          Netmeds pharmacist/doctors will call to <br />confirm medicines
+        </p>
+        <button id="but">CONTINUE</button>
+      </div>
+    </div>
+  </body>
+</html>

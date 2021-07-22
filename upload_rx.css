@@ -1,0 +1,60 @@
+.netNav {
+  max-width: 100%;
+  height: 110px;
+  background-color: rgb(36, 174, 177);
+}
+.netimg {
+  width: 15%;
+  height: 80%;
+  float: left;
+  margin-left: 5%;
+  margin-top: 0.9%;
+}
+.rxMain {
+  max-width: 100%;
+  display: flex;
+  margin: auto;
+  gap: 5%;
+  margin-left: 15%;
+}
+.rxupload {
+  width: 45%;
+  height: 350px;
+}
+#rx {
+  width: 20%;
+  height: 80px;
+  border-radius: 48%;
+  margin-left: 35%;
+  margin-top: 20%;
+  cursor: pointer;
+  background-color: rgb(36, 174, 177);
+}
+#fileToUpload {
+  margin-left: 35%;
+  margin-top: 10%;
+  cursor: pointer;
+}
+.orderIn {
+  width: 30%;
+  height: 400px;
+}
+#but {
+  width: 300px;
+  height: 45px;
+  background-color: rgb(36, 174, 177);
+  color: white;
+  font-weight: bold;
+  margin-top: 5%;
+  margin-left: 4%;
+  border-radius: 7px;
+}
+.pclass {
+  color: grey;
+  font-weight: lighter;
+}
+.checkboxes {
+  width: 20px;
+  height: 20px;
+  margin-left: 10%;
+}
