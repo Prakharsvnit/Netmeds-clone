@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css" />
+
+  </head>
+  <body>
+      <!-- Nav bar -->
+    <div class="netNav">
+      <div class="netimg">
+        <img src="https://www.netmeds.com/msassets/home-logo-netmeds-new.svg" />
+      </div>
+    </div>
+    <div class="order_div"><h3>Order Review</h3></div>
+    <!-- this cont for left side details -->
+    <div class="sec_container">
+      <!-- left address div -->
+      <div class="left_address">
+        <form id="eform">
+          <legend class="add_lege">DELIVERY ADDRESS</legend>
+          <input
+            type="text"
+            placeholder="Enter Valid Address"
+            class="add_clss"
+          />
+          <legend class="add_lege">PINCODE</legend>
+          <input
+            type="number"
+            placeholder="Enter Your Pincode"
+            class="add_clss"
+          />
+          <legend class="add_lege">CARD NO</legend>
+          <input
+            type="number"
+            placeholder="Enter Your Card No"
+            class="add_clss"
+          />
+          <legend class="add_lege">CARD EXPIRY DATE</legend>
+          <input type="num" placeholder="DD/MM/YY" class="add_clss" />
+          <legend class="add_lege">CVV</legend>
+          <input
+            type="number"
+            placeholder="Enter 3digit CVV"
+            class="add_clss"
+          />
+        </form>
+      </div>
+      <div class="pay_amount">
+          <!-- here in classs right u should update amount from backend -->
+        <p style="margin-left: 4%;color: grey;font-weight: lighter;">PAYMENT DETAILS</p>
+          <div class="left">MRP Total</div>
+          <div class="right">AMOUNT</div>
+          <div style="clear: both;"></div>
+          <div class="left">Netmeds Discount</div>
+          <div class="right">AMOUNT</div>
+          <div style="clear: both;"></div>
+          <div class="left">Total Amount*</div>
+          <div class="right">AMOUNT</div>
+          <div style="clear: both;"></div>
+          <button class="butn" id="but_pay" onclick="document.getElementById('order').style.display='block'">PAY</button>
+          <div class="tC">
+              <p>IMPORTANT UPDATE : Due to the current Covid 19 situation, we cannot commit to our mentioned delivery dates. We are working hard to meet the unprecedented demand and we thank you for your patience.<br><br>
+              Netmeds is a technology platform to facilitate transaction of business. The products and services are offered for sale by the sellers. The user authorizes the delivery personnel to be his agent for delivery of the goods. For details read  <span style="color: rgb(36, 174, 177);">Terms &Conditions </span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="order">
+      <div class="order_box">
+        <img
+          class="orderimg"
+          src="https://lh3.googleusercontent.com/proxy/y1OrOsoldzKsSNQyu-fVz1vVqBlaUDbyO-sQQ3IJjNJRWBXZDdfFwxwFQw3ZPqxs1wiGv3ET2smSIpew4VPu_5o1IxBhjvuaeA5K-P2WrCQjREuMpOxKf1a-RK8FGPrn17xN6fQeOGyeTujisbuF-f3UItjB8oM"
+        />
+        <div class="ordertext">Order Placed</div>
+      </div>
+      </div>
+  </body>
+</html>
+<script src="payment.js"></script>
