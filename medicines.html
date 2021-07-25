@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background-color: #f3f3f3;
+        }
+        .btn-disease{
+            background-color: rgb(37,174,177);
+            margin-top: 50px;
+            margin-left: 50px;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar" class="fix-top">
+
+        <!--header start-->
+        
+        <div class="input-group">
+            <div>
+            <a href="index.html"><img src="images/netmedsLogo.png" id="logo"></a>
+            </div>
+            <form class="container" id="searchBar">
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1">Deliver to 110001</span>
+                  <input type="text" id="searchMedicine" class="form-control" placeholder="Search for medicines and wellness products" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </form>
+            <div class="iconDiv" onclick="window.location.href='cart.html'" style="width:200px">
+                <img src="images/shopping-cart.png" class="icon"><p class="navbarItems">Cart</p>
+            </div>
+
+        <!--header end-->
+
+        <!--main navigation start-->
+
+        <div class = "icons-wrapper">
+            <div class = "iconDiv" onclick="window.location.href='medicines.html'">
+                <img src="images/medicine.png" class="icon"><p class="navbarItems">Medicines</p>
+            </div>
+            <div class="iconDiv" onclick="window.location.href = 'wellness.html'">
+                <img src="images/wellness.png" class="icon"><p class="navbarItems">Wellness</p>
+            </div>  
+            <div class="iconDiv" onclick="window.location.href='labtest.html'">
+                <img src="images/covid-test.png" class="icon"><p class="navbarItems">Lab Tests</p>
+            </div> 
+            <div class="iconDiv">
+                <img src="images/cosmetics.png" class="icon"><p class="navbarItems">Beauty</p>
+            </div> 
+            <div class="iconDiv">
+                <img src="images/healthCare.png" class="icon"><p class="navbarItems">Health Corner</p>
+            </div>   
+        </div>
+
+        <!--main navigation end-->
+
+    </div>
+  </div>
+
+  <!--navbar end-->
+
+  <!--medicines cards start-->
+
+
+    <div class="dropdown">
+        <button class="btn btn-disease dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Disease
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" onclick="fever()">fever</a>
+            <a class="dropdown-item" onclick="headache()">headache</a>
+            <a class="dropdown-item" onclick="pain()">Pain Relief</a>
+            <a class="dropdown-item" onclick="nasal()">Nasal congestion</a>
+            <a class="dropdown-item" onclick="cough()">Cough</a>
+            <a class="dropdown-item" onclick="vomit()">Vomiting</a>
+            <a class="dropdown-item" onclick="allergy()">Allergy</a>
+            <a class="dropdown-item" onclick="dry_eye()">Dry eye</a>
+        </div>
+    </div>
+
+<div id="data"></div>
+
+
+
+
+</body>
+</html>
+<!-- <script src="searchBar.js"></script> -->
+<script type="text/javascript" src="js/searchbar.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/medicines.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

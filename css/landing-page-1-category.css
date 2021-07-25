@@ -1,0 +1,139 @@
+.kishan-container{
+  margin:20px 100px 20px 100px;
+}
+
+.text > h1 {
+  margin-left: 1%;
+}
+.parent_div {
+  display: flex;
+  text-align: center;
+}
+
+.child {
+  width: 1000px;
+  margin-right:0px;
+  height: 300px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 25px 29px 58px #cccccc, 20px -29px 58px #ffffff;
+  text-align: center;
+}
+
+.child > img {
+  margin-left: -1%;
+}
+
+.child > h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.parent_div > div {
+  margin: 0.5%;
+}
+
+#baby-product {
+  width: 200px;
+}
+#soap {
+  width: 200px;
+}
+
+#sant {
+  width: 200px;
+}
+
+/* ##TOP BRAND CSS START## */
+
+.parent-div2 {
+  display: flex;
+}
+
+.parent-div2 > div {
+  margin: 1%;
+}
+
+.child1 {
+  width: 1000px;
+  height: 300px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 25px 29px 58px #cccccc, 20px -29px 58px #ffffff;
+  text-align: center;
+}
+
+a {
+  color: #5ba41c;
+}
+
+hr {
+  width: 98%;
+}
+
+/* membership-part-start .........................................written by kishan kumar*/
+
+.membership {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.member-part {
+  display: flex;
+}
+
+.img1 > img {
+  display: inline-block;
+  padding-left: 36%;
+  margin-top: 65%;
+}
+
+.child2 > h1 {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  /* font-weight: 800; */
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+#list {
+  width: 400px;
+  /* border: 1px solid red; */
+  margin-left: 9%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5%;
+}
+
+.flash > img {
+  /* border: 1px solid black; */
+  margin-top: -1%;
+}
+.msg > h4 {
+  font-size: 20px;
+  margin: 20px;
+  color: #ef4281;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.right-btn {
+  color: white;
+  background-color: green;
+  text-align: center;
+  width: 125px;
+  height: 50px;
+  border-radius: 5px;
+}
+.right-btn > a {
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin-top: 12%;
+}

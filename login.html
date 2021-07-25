@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+    <div class="signUp_cont">
+      <div class="leftImg">
+        <img
+          src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png"
+        />
+      </div>
+      <div class="rightSignup">
+        <h1>LOG IN</h1>
+        <form id="eform">
+          <legend class="lege">NAME</legend>
+          <input
+            type="email"
+            placeholder="Please enter your name"
+            class="input_1"
+            id="loginName"
+          />
+          <legend class="lege">PASSWORD</legend>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            class="input_1"
+            id="loginPassword"
+          />
+        </form>
+        <button id="button" onclick="loginSubmit(event)">Log In</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="js/login_signup.js"></script>
