@@ -68,124 +68,114 @@
   </div>
 
     <!--Navbar end-->
-
-    <!------ Include the above in your HEAD tag ---------->
-    <div class = "payment-card-wrapper">
-     <div class = "address">   
-    <div class="padding">
-        <div class="row">
-        <div class="col-sm-6">
+    <div class="container">
+<div class="row">
+    <div class="col payment_mode">
         <div class="card">
-        <div class="card-header">
-        <strong>Address</strong>
-        <small>enter your delivery address</small>
-        </div>
-        <div class="card-body">
-        <div class="row">
-        <div class="col-sm-12">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input class="form-control" id="name" type="text" >
+            <div class="card-header">
+                <strong>Credit Card</strong>
+                <small>enter your card details</small>
             </div>
-        </div>
-        </div>
-        <div class="row">
-        <div class="col-sm-12">
-            <div class="form-group">
-                <label for="ccnumber">Complete Address</label>
-                
-                <div class="input-group">
-                    <input class="form-control" type="text" autocomplete="email">
-                    <div class="input-group-append">
-                        <span class="input-group-text">
-                            <i class="mdi mdi-credit-card"></i>
-                        </span>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="name">Card holder Name</label>
+                            <input class="form-control" id="name" type="text" >
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="ccnumber">Credit Card Number</label>
+                            <div class="input-group">
+                                <input class="form-control" type="text" >
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="mdi mdi-credit-card"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-4">
+                        <label for="ccmonth">Month</label>
+                        <select class="form-control" id="ccmonth">
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="ccyear">Year</label>
+                        <select class="form-control" id="ccyear">
+                        </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input class="form-control" id="cvv" type="text" >
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="col address">
+    <div class="card">
+        <div class="card-header">
+            <strong>Address</strong>
+            <small>enter your delivery address details</small>
         </div>
-        <div class="row">
-        <div class="form-group col-sm-4">
-            <label for="ccmonth">City</label>
-            <input class="form-control" id="cvv" type="text" >
-        </div>
-        <div class="form-group col-sm-4">
-            <label for="ccyear">State</label>
-            <input class="form-control" id="cvv" type="text" >
-        </div>
-        <div class="col-sm-4">
-            <div class="form-group">
-                <label for="cvv">Pincode</label>
-                <input class="form-control" id="cvv" type="text">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" id="name" type="text" >
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
-        </div>
-        </div>
-    </div>
-</div>
-</div>    
-</div>
-<button style="background-color:rgb(37,174,177); width:250px;margin-top:300px;margin-right:300px; height:70px;" onclick="window.location.href='success.html'">Checkout</button>
-<div class="payment">
-        <div class="padding">
-<div class="row">
-<div class="col-sm-6">
-<div class="card">
-<div class="card-header">
-<strong>Credit Card</strong>
-<small>enter your card details</small>
-</div>
-<div class="card-body">
-<div class="row">
-<div class="col-sm-12">
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input class="form-control" id="name" type="text" >
-    </div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12">
-    <div class="form-group">
-        <label for="ccnumber">Credit Card Number</label>
-        <div class="input-group">
-            <input class="form-control" type="text"  autocomplete="email">
-            <div class="input-group-append">
-                <span class="input-group-text">
-                    <i class="mdi mdi-credit-card"></i>
-                </span>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="ccnumber">Full Address</label>
+                        <div class="input-group">
+                            <input class="form-control" type="text" >
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="mdi mdi-credit-card"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-4">
+                    <label for="ccmonth">City</label>
+                    <select class="form-control" id="ccmonth">
+                    </select>
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="ccyear">State</label>
+                    <select class="form-control" id="ccyear">
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="cvv">Zipcode</label>
+                        <input class="form-control" id="cvv" type="text" >
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-</div>
-<div class="row">
-<div class="form-group col-sm-4">
-    <label for="ccmonth">Month</label>
-    <input class="form-control" id="cvv" type="text">
-
-</div>
-<div class="form-group col-sm-4">
-    <label for="ccyear">Year</label>
-    <input class="form-control" id="cvv" type="text">
-</div>
-<div class="col-sm-4">
-    <div class="form-group">
-        <label for="cvv">CVV/CVC</label>
-        <input class="form-control" id="cvv" type="text">
     </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+    </div>
+    </div>
+<button class="btn_checkout" onclick="window.location.href='success.html'">Checkout</button>
 
-</div>
-</div>
 </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
