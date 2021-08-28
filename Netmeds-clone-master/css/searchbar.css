@@ -1,0 +1,46 @@
+input {
+  height: 30px;
+  width: 30%;
+}
+#show {
+  width: 80%;
+  /* border: 1px solid black; */
+  max-height: 400px;
+  overflow-y: scroll;
+  position: absolute;
+  margin-top: 50px;
+  background-color: white;
+  /* display: none; */
+  margin-left: 20%;
+  z-index: 1;
+}
+#show p {
+  color: black;
+}
+.mini {
+  border-bottom: 1px solid rgb(219, 224, 228);
+  gap: 25%;
+}
+.mini:hover {
+  /* background-color: rgb(243, 247, 251); */
+  cursor: pointer;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -1,0 +1,103 @@
+
+
+.calAmt{
+width:220px;
+height: 50px;
+color:white;
+background-color:rgb(50,174,177);
+margin-left: 150px;
+margin-top:40px;
+}
+
+/* cart products */
+.cartItem {
+  width: 600px;
+  height: 160px;
+  position: relative;
+  background-color: white;
+  float:left;
+  margin-left:400px;
+  margin-top:40px;
+}
+
+.itemImage {
+  height: 140px;
+  max-width: 33%;
+  align-items: center;
+  float: left;
+}
+
+.itemName {
+  font-family: "Lato";
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.itemPrice {
+  font-size: 25px;
+  font-family: "Lato";
+  margin-top: 70px;
+}
+
+.itemQty {
+  width: 50px;
+  text-align: center;
+  position: absolute;
+  right: 5px;
+  bottom: 20px;
+    color:black;
+}
+
+
+
+.qty {
+  position: relative;
+}
+
+.itemBtnCancel{
+    position:absolute;
+    right:20px;
+    top:20px;
+
+  }
+
+/*promocode*/
+
+.promo{
+  width:350px;
+  height:150px;
+  background-color: white;
+  text-align: center;
+  margin-right: 400px;
+  margin-top: 40px;
+
+}
+
+.code{
+  width: 250px;
+  text-align: center;
+  color:black;
+}
+
+.promoBtn{
+  color:white;
+  background-color: rgb(50,174,177);
+}
+
+/*Cost */
+
+.cost{
+  width:350px;
+  height:250px;
+  text-align: center;
+  background-color:white;
+  margin-right: 400px;
+  margin-top: 40px;
+}
+
+.costBtn{
+  background-color:rgb(50,174,177) ;
+  color:white;
+  width:220px;
+  height:50px;
+}
