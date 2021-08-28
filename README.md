@@ -2,7 +2,8 @@
 Netmeds is online portal for medicine where one can upload prescription order medicine and get them delivered at doorstep
 # Usage
 * Clone the repository
-* Install the packages for backend , npm install command
+* Install the packages for backend , npm init -y , npm i express mongoose@5.11.15
+* Install nodemon globaly
 * Run the  backend
 # Features
 * Signup and Login.
@@ -10,7 +11,7 @@ Netmeds is online portal for medicine where one can upload prescription order me
 * A user can sort and filter.
 
 # Credits
-I don't own any of the content such as images or icons on this website, this was purely developed with an intent of learning and exploring, and should not be used for commercial purposes.
+We don't own any of the content such as images or icons on this website, this was purely developed with an intent of learning and exploring, and should not be used for commercial purposes.
 * Images - google || netmed
 * Icons - FontAwesome 
 * References - MDN || w3schools
