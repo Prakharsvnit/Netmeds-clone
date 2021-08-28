@@ -2,33 +2,65 @@ var data_div = document.getElementById("data");
 
 function appendProducts(el) {
   var div_1 = document.createElement("div");
+
   div_1.classList.add("container", "cartItem");
+
   var image = document.createElement("img");
+
   image.setAttribute("class", "itemImage");
+
   image.src = el.image;
+
   var i_name = document.createElement("p");
+
   i_name.setAttribute("class", "itemName");
+
   i_name.innerHTML = el.name;
+
   var d_price = document.createElement("p");
+
   d_price.setAttribute("class", "itemPrice");
+
   d_price.innerHTML = el.d_price;
-  // < cancel button--->
+
   var btnCancel = document.createElement("button");
+
   btnCancel.setAttribute("class", "itemBtnCancel");
-  ////---->
+
+  btnCancel.addEventListener("click", function () {
+    removeFromCart(el);
+
+    div_1.remove();
+  });
+
   var icon_1 = document.createElement("i");
+
   icon_1.classList.add("fa", "fa-window-close");
+
   icon_1.setAttribute("aria-hidden", "true");
+
   btnCancel.append(icon_1);
+
   var div_2 = document.createElement("div");
+
   div_2.setAttribute("class", "qty");
+
   var input = document.createElement("input");
-  input.setAttribute("type", "text");
+
+  input.setAttribute("type", "number");
+
   input.setAttribute("class", "itemQty");
-  input.setAttribute("value", "1");
-  input.setAttribute("id", "quantity");
+
+  input.setAttribute("id", "quantity" + "_" +  el.name);
+
+
+
+  input.setAttribute("value", 0);
+
   div_2.append(input);
+
   div_1.append(image, i_name, d_price, btnCancel, div_2);
+
   data_div.append(div_1);
 }
 
@@ -70,7 +102,7 @@ function cost() {
   proceed.innerHTML = "Proceed";
 
   proceed.addEventListener("click", function () {
-    window.location.href = "paymentnew.html";
+    window.location.href = "payments.html";
   });
 
   div_3.append(p_details, p_price, p_discount, p_total, proceed);
@@ -86,6 +118,23 @@ function showCart() {
   data.forEach(function (el) {
     appendProducts(el);
   });
+
+  data.forEach(function (el) {
+    let name = "quantity" + "_" + el.name;
+
+    let ele = document.getElementById(name);
+
+    ele.addEventListener("change",() => {
+      let data = JSON.parse(localStorage.getItem("visited"));
+      data.forEach((item) => {
+        if(item.name == el.name){
+          item.item_qty = ele.value;
+        }
+      })
+
+    localStorage.setItem("visited",JSON.stringify(data));
+    })
+  })
 }
 
 showCart();
@@ -101,11 +150,12 @@ function totalPrice() {
 
   data.forEach(function (el) {
     var p = el.d_price.slice(3);
-
-    totalPrice += parseInt(p);
+    var q = el.item_qty;
+    totalPrice += q*parseInt(p);
   });
 
   m.innerHTML = "MRP Total: Rs." + totalPrice;
+
   total.innerHTML = "Total Price: Rs." + totalPrice;
 
   return totalPrice;
@@ -117,6 +167,7 @@ function PromoCode() {
   var tp = totalPrice();
 
   var d = document.getElementById("disc");
+
   var t = document.getElementById("total");
 
   if (coupon_code === "masai30") {
@@ -125,6 +176,17 @@ function PromoCode() {
     var total = Math.ceil(tp * 0.7);
 
     d.innerHTML = "Discount: Rs." + discount;
+
     t.innerHTML = "Total Price: Rs." + total;
   }
+}
+
+function removeFromCart(obj) {
+  let data = JSON.parse(localStorage.getItem("visited"));
+
+  var i = data.findIndex((x) => x.name == obj.name);
+
+  data.splice(i, 1);
+
+  localStorage.setItem("visited", JSON.stringify(data));
 }
