@@ -4,7 +4,7 @@ Netmeds is online portal for medicine where one can upload prescription order me
 * Clone the repository
 * Install the packages for backend , npm init -y , npm i express mongoose@5.11.15
 * Install nodemon globaly
-* Run the  backend
+* Run the server by entering command `npm run server` inside backend folder
 # Features
 * Signup and Login.
 * A user can add a product to cart.
