@@ -44,3 +44,10 @@ input {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.addBT {
+  height: 28px;
+  width: 150px;
+  background-color: rgb(36, 174, 177);
+  color: white;
+  border-radius: 5px;
+}
