@@ -51,9 +51,7 @@ function appendProducts(el) {
 
   input.setAttribute("class", "itemQty");
 
-  input.setAttribute("id", "quantity" + "_" +  el.name);
-
-
+  input.setAttribute("id", "quantity" + "_" + el.name);
 
   input.setAttribute("value", 0);
 
@@ -102,7 +100,7 @@ function cost() {
   proceed.innerHTML = "Proceed";
 
   proceed.addEventListener("click", function () {
-    window.location.href = "payments.html";
+    window.location.href = "paymentsnew.html";
   });
 
   div_3.append(p_details, p_price, p_discount, p_total, proceed);
@@ -124,17 +122,17 @@ function showCart() {
 
     let ele = document.getElementById(name);
 
-    ele.addEventListener("change",() => {
+    ele.addEventListener("change", () => {
       let data = JSON.parse(localStorage.getItem("visited"));
       data.forEach((item) => {
-        if(item.name == el.name){
+        if (item.name == el.name) {
           item.item_qty = ele.value;
         }
-      })
+      });
 
-    localStorage.setItem("visited",JSON.stringify(data));
-    })
-  })
+      localStorage.setItem("visited", JSON.stringify(data));
+    });
+  });
 }
 
 showCart();
@@ -151,7 +149,7 @@ function totalPrice() {
   data.forEach(function (el) {
     var p = el.d_price.slice(3);
     var q = el.item_qty;
-    totalPrice += q*parseInt(p);
+    totalPrice += q * parseInt(p);
   });
 
   m.innerHTML = "MRP Total: Rs." + totalPrice;
